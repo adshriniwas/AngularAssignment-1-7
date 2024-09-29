@@ -1,0 +1,48 @@
+<p>order works!</p>
+
+<form (ngSubmit)="submit()">
+  <hr />
+  <h1 class="text-center">{{ title }}</h1>
+  <div class="row justify-content-center px-3">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Sender Name: </label>
+        <input
+          type="text"
+          class="form-control"
+          name="senderName"
+          [(ngModel)]="orders.senderName"
+          placeholder="Enter Sender name"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label>Receiver Name: </label>
+        <input
+          type="text"
+          class="form-control"
+          name="receiverName"
+          [(ngModel)]="orders.receiverName"
+          placeholder="Enter Receiver name"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label>Receiver Contact Number: </label>
+        <input
+          type="text"
+          class="form-control"
+          name="receiverMobNum"
+          [(ngModel)]="orders.receiverMobNum"
+          placeholder="Enter Receiver Contact number"
+        />
+      </div>
+      <div class="form-group my-3">
+        <input
+          type="submit"
+          class="btn btn-primary"
+          value="submit"
+          name="submit"
+        />
+      </div>
+    </div>
+  </div>
+</form>
